@@ -438,19 +438,31 @@ margin-top: 20px;
     margin-bottom: 50px;
   }
   
+  .footer-about-layer {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-about-layer i {
+    font-size: 150px;
+    opacity: 0.08;
+    margin-bottom: 50px;
+  }
+  
   .footer-logo {
-    font-family: "Montserrat", sans-serif;
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 20px;
     color: var(--secondary-color);
   }
-  
+
   .footer-quote {
     font-style: italic;
     line-height: 1.6;
     max-width: 300px;
-    position: relative;
     padding-left: 20px;
     border-left: 3px solid var(--secondary-color);
   }
@@ -481,6 +493,13 @@ margin-top: 20px;
     color: var(--secondary-color);
     transform: translateX(5px);
   }
+
+  .footer-contact-box {
+    background: linear-gradient(rgba(46, 46, 46, 0.7), rgba(46, 46, 46, 0.7)) ,url(../assets/images/background/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
   
   .footer-contact p {
     margin-bottom: 15px;
@@ -499,6 +518,10 @@ margin-top: 20px;
     padding-top: 30px;
     text-align: center;
     font-size: 14px;
+  }
+
+  .footer-bottom strong {
+    color: var(--secondary-color);
   }
   
   .footer-social {
@@ -666,6 +689,13 @@ margin-top: 20px;
       .footer-quote {
         max-width: 100%;
       }
+
+      .footer-about-layer i {
+        font-size: 120px;
+        opacity: 0.08;
+        margin-bottom: 0;
+      }
+      
 }
 
 @media screen and (max-width:576px) {
@@ -724,10 +754,6 @@ margin-top: 20px;
 
     #about .about-content_buttons .about-btn {
         width: 40% !important;
-    }
-
-    #contact .section-header {
-        margin-bottom: 10px !important;
     }
 }
 
