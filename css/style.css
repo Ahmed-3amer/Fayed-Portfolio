@@ -388,18 +388,19 @@ margin-top: 20px;
 /* end projects section */
 
 /* Start Contact Section */
-#contact .contact-info .contact-icon:hover {
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
-#contact .contact-icon {
-    font-size: 35px;
+#contact .contact-info .contact-icon {
+    font-size: 35px !important;
     width: 90px;
     height: 90px;
+    color: var(--primary-color);
     background-color: var(--secondary-color);
     cursor: pointer;
     transition: all 0.4s;
+}
+
+#contact .contact-info .contact-icon:hover {
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 #contact .contact-info h4 {
